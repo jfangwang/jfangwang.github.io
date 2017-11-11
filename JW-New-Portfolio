@@ -23,7 +23,7 @@
 </style>
 
 	<!-- Shortcut Icon -->
-	<link rel="shortcut icon"  href="assets/images/JWProfile.png" />
+	<link rel="shortcut icon" href="assets/images/JWProfile.png" />
 
 	<!-- Custom styles CSS -->
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
@@ -45,8 +45,13 @@
         <div class="home-overlay"></div>
 		<div class="intro">
 			<h1>Jonny Wang</h1>
-			<div class="start">This is my portfolio</div>
+			<div>This is my portfolio</div><br>
+			<a href="https://www.facebook.com/jonny.wang.5074"><img class= "imgFacebook" src="https://www.seeklogo.net/wp-content/uploads/2016/09/facebook-icon-preview-1-400x400.png" width=56 height=56 alt="https://www.facebook.com/"></a>
+			<a href="https://www.instagram.com/jfangwang/"><img class= "imgInstagram" src="https://www.seeklogo.net/wp-content/uploads/2016/06/Instagram-logo.png" width=50 height=50 alt="https://www.instagram.com/" ></a>
+			<a href="https://mobile.twitter.com/jfangwang"><img class= "imgTwitter" src="https://www.seeklogo.net/wp-content/uploads/2015/11/twitter-logo.png" width=50 height=50 alt="https://twitter.com/"></a>
+			<a href="https://github.com/jfangwang"><img class= "imgGithub" src="http://abb1991.github.io/images/thumbnails/github-logo.svg" width=47 height=47 alt="https://github.com/"></a>
 		</div>
+
 
         <a href="#about">
 		<div class="scroll-down">
@@ -86,7 +91,7 @@
             <li><a href="#skills">Interests</a></li>
 						<li><a href="#testimonials">Accomplishments</a></li>
 						<li><a href="#contact">Contact</a></li>
-						<li><a href="JW-homepage.html">Resume</a></li>
+						<li><a href="JW-resume.html">Resume</a></li>
 					</ul>
 				</div>
 
