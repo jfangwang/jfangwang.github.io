@@ -22,7 +22,7 @@
 </style>
 	<!-- Custom styles CSS -->
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
-
+    <script type="text/javascript" src="script.js" defer></script>
     <script src="assets/js/modernizr.custom.js"></script>
 
 </head>
@@ -36,7 +36,7 @@
 
 	<!-- Home start -->
 
-	<section id="" class="pfblock-image screen-height background">
+	<section id="Home" class="pfblock-image screen-height background">
         <div class="home-overlay"></div>
 		<div class="intro">
 			<h1>Jonny Wang</h1>
@@ -75,10 +75,10 @@
 
 				<div class="collapse navbar-collapse " id="custom-collapse">
 					<ul class="nav navbar-nav navbar-right ">
-						<li><a href="#home">Home</a></li>
+						<li><a href="#Home">Home</a></li>
 						<li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Projects</a></li>
-                        <li><a href="#skills">Interests</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Interests</a></li>
 						<li><a href="#testimonials">Accomplishments</a></li>
 						<li><a href="#contact">Contact</a></li>
 						<li><a href="JW-homepage.html">Resume</a></li>
@@ -172,7 +172,7 @@
 
 	<!-- Portfolio start -->
 
-	<section id="portfolio" class="pfblock">
+	<section id="projects" class="pfblock">
 		<div class="container">
 			<div class="row">
 
@@ -196,7 +196,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-4">
 
                     <div class="grid wow zoomIn">
-                        <figure class="effect-bubba">
+                        <figure class="">
                             <img src="assets/images/item-1.jpg" alt="img01"/>
                             <figcaption>
                                 <h2>Shark <span>VR</span></h2>
@@ -427,7 +427,7 @@
 	<!-- Footer start -->
 
 	<footer id="footer">
-		<div class="container">
+		<div class="link href="assets/css/style.css" rel="stylesheet" media="screen">container">
 			<div class="row">
 
 				<div class="col-sm-12">
@@ -460,12 +460,9 @@
 	<!-- Footer end -->
 
 	<!-- Scroll to top -->
-
 	<div class="scroll-up">
-		<a href="#home"><i class="fa fa-angle-up"></i></a>
+		<a href="#Home"><i class="fa fa-angle-up"></i></a>
 	</div>
-
-    <!-- Scroll to top end-->
 
 	<!-- Javascript files -->
 
@@ -476,9 +473,9 @@
 	<script src="assets/js/jquery.sticky.js"></script>
 	<script src="assets/js/smoothscroll.js"></script>
 	<script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/jquery.easypiechart.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.cbpQTRotator.js"></script>
+  <script src="assets/js/jquery.easypiechart.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/jquery.cbpQTRotator.js"></script>
 	<script src="assets/js/custom.js"></script>
 
 </body>
