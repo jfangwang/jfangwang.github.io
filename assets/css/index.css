@@ -23,3 +23,29 @@ a.icons:hover {
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%)
 }
+.homepage{
+  background-image: url(../images/Moraine-Lake.png);
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+section{
+  width:100%;
+  height: 100%;
+  border: 2px red solid;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+.parallax{
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
