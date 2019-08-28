@@ -1,0 +1,25 @@
+.background{
+  background-image:url(../images/UMass.png);height: 100%;
+	background-position: center;
+}
+.blue{color:#4A86E8}
+.bgblue{background-color:#4A86E8}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+a.icons:hover {
+	opacity: .6;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%)
+}
