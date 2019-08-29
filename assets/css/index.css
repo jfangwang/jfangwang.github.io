@@ -75,16 +75,15 @@ nav{
 nav a {
   text-decoration: none;
   outline:none;
-  padding-right:3vh;
-  padding-left: 3vh;
+  padding-right:4vh;
+  padding-left: 4vh;
   border-radius: 20px;
-  border: 2px solid green;
   color: white;
 }
 nav a:hover{
   background-color: white;
-  padding-right:40px;
-  padding-left: 40px;
+  padding-right:4vh;
+  padding-left: 4vh;
   border-radius: 20px;
 }
 .welcome{
@@ -171,11 +170,13 @@ nav a:hover{
   .homepage{
     background-position: 0px -10vh;
   }
+
 }
 @media only screen and (max-width : 1824px)  and (min-width : 1224px)  {
   .homepage{
     background-position: 0px -20vh;
   }
+
 }
 
 /* Large screens ----------- */
