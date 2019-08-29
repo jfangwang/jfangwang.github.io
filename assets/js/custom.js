@@ -4,13 +4,15 @@
 	 * Preloader
 	/* ---------------------------------------------- */
 
-	// $(window).load(function() {
-	// 	$('#status').fadeOut();
-	// 	$('#preloader').delay(300).fadeOut('slow');
-	// });
 	$(window).load(function() {
-	   $('.preloader').fadeOut('slow');
+		$('#status').fadeOut();
+		$('#preloader').delay(300).fadeOut('slow');
 	});
+	// $(window).load(function() {
+	//    $('.preloader').fadeOut('slow');
+	// });
+
+
 	$(document).ready(function() {
 
 		/* ---------------------------------------------- /*
