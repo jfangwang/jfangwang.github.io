@@ -36,8 +36,11 @@ header{
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 0;
   height:100vh;
+}
+h1{
+  font-size: 100px;
+  text-transform: uppercase;
 }
 section{
   position: absolute;
@@ -68,24 +71,42 @@ nav{
   padding-bottom: 15px;
   font-size: 30px;
   z-index: 1;
-
 }
 nav a {
   text-decoration: none;
   outline:none;
-  margin-right:40px;
-  margin-left: 40px;
+  padding-right:40px;
+  padding-left: 40px;
+  border-radius: 20px;
   color: black;
+}
+nav a:hover{
+  background-color: white;
+  padding-right:40px;
+  padding-left: 40px;
+  border-radius: 20px;
 }
 .welcome{
   position: absolute;
 	width: 100%;
 	top: 50%;
-	left: 0;
+  color:white;
 	text-align: center;
 	-webkit-transform: translate(0%, -50%);
 	-moz-transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);
 	-o-transform: translate(0%, -50%);
 	transform: translate(0%, -50%);
+}
+.preloader {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 9999;
+   background-image: url('assets/images/Running.gif');
+   background-repeat: no-repeat;
+   background-color: #FFF;
+   background-position: center;
 }
