@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Version 2.0 -->
 <html lang="en" dir="ltr">
 <head>
 	<meta charset="UTF-8">
@@ -28,8 +29,26 @@
 
 
 		<!-- HOME PAGE -->
-		<header id="home" class="parallax homepage">
-			<nav class="" id="menu">
+		<header id="Home" class="parallax homepage">
+			<!-- MOBILE NAV -->
+			<nav class="mobile-nav"role="navigation">
+			  <div id="menuToggle">
+			    <input type="checkbox" />
+			    <span></span>
+			    <span></span>
+			    <span></span>
+			    <ul id="menu">
+						<a class="hvr-back-pulse"href="#Home">Home</a>
+						<a class="hvr-back-pulse"href="#Intro">Intro</a>
+						<a class="hvr-back-pulse"href="#Projects">Projects</a>
+						<a class="hvr-back-pulse"href="contact.html">Contact</a>
+						<a class="hvr-back-pulse"href="JWResume.pdf">Resume</a>
+			    </ul>
+			  </div>
+			</nav>
+			<!-- END MOBILE NAV -->
+			<!-- DESKTOPNAV -->
+			<nav class="desktop-nav" id="">
 				<a class="hvr-back-pulse"href="#Home">Home</a>
 				<a class="hvr-back-pulse"href="#Intro">Intro</a>
 				<a class="hvr-back-pulse"href="#Projects">Projects</a>
@@ -41,8 +60,7 @@
 				<h1>Jonny Wang</h1>
 			</div>
 		</header>
-
-
+		<!-- END DESKTOP NAV -->
     <!-- END HOME PAGE -->
 
     <!-- INTRO -->

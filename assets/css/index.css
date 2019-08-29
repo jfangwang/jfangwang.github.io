@@ -1,22 +1,6 @@
 body{
   font-family: quicksand;
 }
-.blue{color:#4A86E8}
-.bgblue{background-color:#4A86E8}
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
 a.icons:hover {
 	opacity: .6;
 	transform: translate(-50%, -50%);
@@ -112,32 +96,41 @@ nav a:hover{
 }
 /* SMARTPHONES PORTRAIT */
 @media only screen and (max-width: 320px) {
-  nav{
+  /* nav{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  } */
+  .desktop-nav{
+    display: none;
   }
 }
 
 /* SMARTPHONES LANDSCAPE */
 @media only screen and (max-width: 480px) and (min-width : 320px) {
-  nav{
+  /* nav{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  } */
+  .desktop-nav{
+    display: none;
   }
 }
 /* TABLET LANDSCAPE */
 @media only screen and (max-width: 600px) and (min-width : 480px) {
-  nav{
+  /* nav{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  } */
+  .desktop-nav{
+    display: none;
   }
 }
 /* TABLETS PORTRAIT */
 @media only screen and (max-width: 768px) and (min-width : 600px){
-  nav{
+  /* nav{
     display: flex;
     justify-content: center;
   }
@@ -148,11 +141,12 @@ nav a:hover{
   nav a:hover{
     padding-right:1vh;
     padding-left: 1vh;
-  }
+  } */
+  .desktop-nav{display:none;}
 }
 /* TABLET LANDSCAPE / DESKTOP */
 @media only screen and (max-width: 1024px) and (min-width : 768px) {
-  nav{
+  /* nav{
     display: flex;
     justify-content: center;
   }
@@ -163,20 +157,21 @@ nav a:hover{
   nav a:hover{
     padding-right:2vh;
     padding-left: 2vh;
-  }
+  } */
+    .desktop-nav{display:none;}
 }
 /* Desktops and laptops ----------- */
 @media only screen and (max-width : 1224px) and (min-width : 1024px){
   .homepage{
     background-position: 0px -10vh;
   }
-
+  .mobile-nav{display:none;}
 }
 @media only screen and (max-width : 1824px)  and (min-width : 1224px)  {
   .homepage{
     background-position: 0px -20vh;
   }
-
+  .mobile-nav{display:none;}
 }
 
 /* Large screens ----------- */
@@ -184,4 +179,158 @@ nav a:hover{
   .homepage{
     background-position: 0px -40vh;
   }
+  .mobile-nav{display:none;}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+
+
+ #menuToggle
+ {
+   display: block;
+   position: relative;
+   top: 20px;
+   left: 20px;
+   z-index: 1;
+
+   -webkit-user-select: none;
+   user-select: none;
+ }
+
+ #menuToggle input
+ {
+   display: block;
+   width: 45px;
+   height: 37px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+
+   cursor: pointer;
+
+   opacity: 0; /* hide this */
+   z-index: 2; /* and place it over the hamburger */
+
+   -webkit-touch-callout: none;
+ }
+
+ /*
+  * Just a quick hamburger
+  */
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+
+   background: white;
+   border-radius: 3px;
+
+   z-index: 1;
+
+   transform-origin: 4px 0px;
+
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+
+ #menuToggle span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+
+ #menuToggle span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+
+ /*
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+ #menuToggle input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: white;
+ }
+
+ /*
+  * But let's hide the middle one.
+  */
+ #menuToggle input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+
+ /*
+  * Ohyeah and the last one should go the other direction
+  */
+ #menuToggle input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+
+ /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+ #menu{
+   position: absolute;
+   width: 120px;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   height:100vh;
+   background: black;
+   opacity: 0.7;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   /* to stop flickering of text in safari */
+   transform-origin: 0% 0%;
+   transform: translate(-100%, 0);
+
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+
+ #menu li
+ {
+   padding: 10px 0;
+   font-size: 22px;
+   opacity: 1;
+ }
+
+ /*
+  * And let's slide it in from the left
+  */
+ #menuToggle input:checked ~ ul
+ {
+   transform: none;
+ }
