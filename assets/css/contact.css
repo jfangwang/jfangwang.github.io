@@ -23,10 +23,11 @@ a.icons:hover {
 	-ms-transform: translate(-50%, -50%)
 }
 .homepage{
-  background-image: url(../images/4k-forrest.png);
+  background-image: url(../images/US-Open.png);
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
+  background-position: top;
 }
 header{
   width:100%;
