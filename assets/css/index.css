@@ -1,6 +1,5 @@
-.background{
-  background-image:url(../images/UMass.png);height: 100%;
-	background-position: center;
+body{
+  font-family: quicksand;
 }
 .blue{color:#4A86E8}
 .bgblue{background-color:#4A86E8}
@@ -29,6 +28,7 @@ a.icons:hover {
   background-position: center center;
   background-repeat: no-repeat;
 
+
 }
 section{
   width:100%;
@@ -48,4 +48,34 @@ section{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+nav a {
+  text-decoration: none;
+  outline:none;
+  margin-right:40px;
+  margin-left: 40px;
+  color: black;
+}
+.welcome{
+  position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	-webkit-transform: translate(0%, -50%);
+	-moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+	-o-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+	padding: 0 15px;
 }
