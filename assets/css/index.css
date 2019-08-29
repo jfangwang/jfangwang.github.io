@@ -23,7 +23,7 @@ a.icons:hover {
 	-ms-transform: translate(-50%, -50%)
 }
 .homepage{
-  background-image: url(../images/Moraine-Lake.png);
+  background-image: url(../images/US-Open.png);
   background-size: cover; /* or contain depending on what you want */
   background-position: center center;
   background-repeat: no-repeat;
@@ -75,10 +75,11 @@ nav{
 nav a {
   text-decoration: none;
   outline:none;
-  padding-right:40px;
-  padding-left: 40px;
+  padding-right:3vh;
+  padding-left: 3vh;
   border-radius: 20px;
-  color: black;
+  border: 2px solid green;
+  color: white;
 }
 nav a:hover{
   background-color: white;
@@ -89,7 +90,7 @@ nav a:hover{
 .welcome{
   position: absolute;
 	width: 100%;
-	top: 50%;
+	top: 80%;
   color:white;
 	text-align: center;
 	-webkit-transform: translate(0%, -50%);
@@ -109,4 +110,77 @@ nav a:hover{
    background-repeat: no-repeat;
    background-color: #FFF;
    background-position: center;
+}
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 320px) {
+  nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (max-width: 480px) and (min-width : 320px) {
+  nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+/* TABLET LANDSCAPE */
+@media only screen and (max-width: 600px) and (min-width : 480px) {
+  nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+/* TABLETS PORTRAIT */
+@media only screen and (max-width: 768px) and (min-width : 600px){
+  nav{
+    display: flex;
+    justify-content: center;
+  }
+  nav a {
+    padding-right:1vh;
+    padding-left: 1vh;
+  }
+  nav a:hover{
+    padding-right:1vh;
+    padding-left: 1vh;
+  }
+}
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (max-width: 1024px) and (min-width : 768px) {
+  nav{
+    display: flex;
+    justify-content: center;
+  }
+  nav a {
+    padding-right:2vh;
+    padding-left: 2vh;
+  }
+  nav a:hover{
+    padding-right:2vh;
+    padding-left: 2vh;
+  }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (max-width : 1224px) and (min-width : 1024px){
+  .homepage{
+    background-position: 0px -10vh;
+  }
+}
+@media only screen and (max-width : 1824px)  and (min-width : 1224px)  {
+  .homepage{
+    background-position: 0px -20vh;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px){
+  .homepage{
+    background-position: 0px -40vh;
+  }
 }
