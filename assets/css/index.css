@@ -45,7 +45,24 @@ section{
   background-size: cover;
 }
 .mobile-nav{
-
+  position:fixed;
+  top:0;
+  left:0;
+  width:auto;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 30px;
+  z-index: 1;
+}
+.mobile-nav a{
+  text-decoration: none;
+  outline:none;
+  padding-right:4vh;
+  padding-left: 4vh;
+  border-radius: 20px;
+  color: white;
 }
 .desktop-nav{
   position:fixed;
@@ -136,11 +153,11 @@ nav a:hover{
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 100%;
-}
-.mobile-nav{
 
 }
-
+.social-links a:hover:nth-child(6) {
+  border-radius: 10%;
+}
 /* SMARTPHONES PORTRAIT */
 @media only screen and (max-width: 320px) {
   /* nav{
@@ -362,7 +379,7 @@ nav a:hover{
   */
  #menu{
    position: absolute;
-   width: 120px;
+   width: 150px;
    margin: -100px 0 0 -50px;
    padding: 50px;
    padding-top: 125px;
