@@ -13,6 +13,12 @@ a.icons:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.navbar {
+	position: relative;
+	height: 80px;
+	margin-bottom: 20px;
+	border: 1px solid transparent
+}
 header{
   /* width:100%;
   height: 100%;
@@ -75,7 +81,7 @@ section{
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 30px;
-  z-index: 1;
+  z-index: 100;
 }
 .desktop-nav a{
   text-decoration: none;
@@ -83,7 +89,7 @@ section{
   padding-right:4vh;
   padding-left: 4vh;
   border-radius: 20px;
-  color: white;
+  color: black;
 }
 nav a:hover{
   background-color: white;
@@ -170,9 +176,16 @@ nav a:hover{
     display: none;
   }
 .show-links{display:none; }
+.homepage{
+  background-size: auto 40%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
 }
 
 /* SMARTPHONES LANDSCAPE */
+/*       iPhone       */
 @media only screen and (max-width: 480px) and (min-width : 320px) {
   /* nav{
     display: flex;
@@ -182,8 +195,15 @@ nav a:hover{
   .desktop-nav{
     display: none;
   }
-.show-links{display:none; }
+  .show-links{display:none; }
+  .homepage{
+    background-size: auto 40%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+  }
 }
+
 /* TABLET LANDSCAPE */
 @media only screen and (max-width: 600px) and (min-width : 480px) {
   /* nav{

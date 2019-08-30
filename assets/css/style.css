@@ -513,16 +513,14 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 .header {
-	border-bottom: 1px solid #f5f5f5;
 	position: relative;
 	width: 100%;
-	z-index: 998;
+	z-index: 1;
 }
 
 .navbar-custom {
-	border: 0;
+	border: 0px solid red;
 	border-radius: 0;
-	margin: 0;
 	text-transform: uppercase;
 	font-family: Raleway, sans-serif;
 }
