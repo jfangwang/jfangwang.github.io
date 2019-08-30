@@ -14,6 +14,7 @@ a.icons:hover {
   background-attachment: fixed;
 }
 .navbar {
+  border:0px solid red;
 	position: relative;
 	height: 80px;
 	margin-bottom: 20px;
@@ -182,6 +183,7 @@ nav a:hover{
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
 }
+  .nav-links{display: show;}
 }
 
 /* SMARTPHONES LANDSCAPE */
@@ -202,6 +204,8 @@ nav a:hover{
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
   }
+  .navbar {height: 50px;}
+    .nav-links{display: show;}
 }
 
 /* TABLET LANDSCAPE */
@@ -215,6 +219,7 @@ nav a:hover{
     display: none;
   }
 .show-links{display:none; }
+  .nav-links{display: show;}
 }
 /* TABLETS PORTRAIT */
 @media only screen and (max-width: 768px) and (min-width : 600px){
@@ -232,6 +237,7 @@ nav a:hover{
   } */
   .desktop-nav{display:none;}
 .show-links{display:none; }
+      .nav-links{display: show;}
 }
 /* TABLET LANDSCAPE / DESKTOP */
 @media only screen and (max-width: 1024px) and (min-width : 768px) {
@@ -249,6 +255,7 @@ nav a:hover{
   } */
     .desktop-nav{display:none;}
     .show-links{display:none; }
+      .nav-links{display: none;}
 }
 /* Desktops and laptops ----------- */
 @media only screen and (max-width : 1224px) and (min-width : 1024px){
@@ -258,6 +265,7 @@ nav a:hover{
   .mobile-nav{display:none;}
   .social-links-custom{display: none;}
   .show-links{display:flex; }
+  .nav-links{display: none; }
 }
 
 
@@ -268,6 +276,7 @@ nav a:hover{
   .social-links-custom {display: flex;}
   .mobile-nav{display:none;}
 .show-links{display:none; }
+.nav-links{display: none;}
 }
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px){
@@ -277,6 +286,7 @@ nav a:hover{
   .mobile-nav{display:none;}
   .social-links-custom {display: flex;}
 .show-links{display:none; }
+  .nav-links{display: none;}
 }
 
 
