@@ -1,5 +1,5 @@
 body{
-  font-family: quicksand;
+  font-family: Quicksand;
 }
 a.icons:hover {
 	opacity: .6;
@@ -32,6 +32,7 @@ header{
 h1{
   font-size: 100px;
   text-transform: uppercase;
+  font-family: Quicksand;
 }
 section{
   /* position: absolute;
@@ -166,7 +167,10 @@ nav a:hover{
 .social-links-custom a:hover:nth-child(6) {
   border-radius: 10%;
 }
-
+.custom-button{
+  background-color: white;
+  border-radius: 100%;
+}
 
 /* SMARTPHONES PORTRAIT */
 @media only screen and (max-width: 320px) {
@@ -264,6 +268,10 @@ nav a:hover{
       padding-right: 2vh;
       padding-left:2vh;
     }
+    nav a:hover{
+      padding-right: 2vh;
+      padding-left:2vh;
+    }
     #header-container{
       display:none;
     }
@@ -276,7 +284,7 @@ nav a:hover{
   .mobile-nav{display:none;}
   .social-links-custom{display: none;}
   .show-links{display:flex; }
-  .nav-links{display: none; }
+  .nav-links {display: none; }
   #header-container{
     display:none;
   }
@@ -290,7 +298,7 @@ nav a:hover{
   .social-links-custom {display: flex;}
   .mobile-nav{display:none;}
 .show-links{display:none; }
-.nav-links{display: none;}
+.nav-links, a.nav-links{display: none;}
 #header-container{
   display:none;
 }
@@ -303,7 +311,7 @@ nav a:hover{
   .mobile-nav{display:none;}
   .social-links-custom {display: flex;}
 .show-links{display:none; }
-  .nav-links{display: none;}
+  .nav-links, a.nav-links{display: none;}
   #header-container{
     display:none;
   }
