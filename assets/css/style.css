@@ -20,7 +20,7 @@ img {
 }
 
 a {
-	color: #E7746F;
+	color: #0095FA;
 }
 
 a:hover {
@@ -537,26 +537,27 @@ textarea.form-control {
 	font-size: 11px;
 	letter-spacing: 3px;
 	color: #222;
+		background: white;
 }
 
 .navbar-custom .nav li.active,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
 .navbar-custom .navbar-nav > li.active a {
-	background: none;
+	background: white;
 	outline: 0;
-	color: #E7746F;
+	color: #0095FA;
 }
 
 .navbar-custom .navbar-brand {
 	font-weight: 700;
-	font-size: 22px;
-    font-family: Lobster, cursive;
+	font-size: 27px;
+  font-family: Quicksand;
 }
 
 .navbar-custom .dropdown-menu {
 	border: 0;
-	border-top: 2px solid #E7746F;
+	border-top: 2px solid #0095FA;
 	border-radius: 0;
 }
 
@@ -600,7 +601,7 @@ textarea.form-control {
 .scroll-up a:hover,
 .scroll-up a:active {
 	background-color: rgba(235, 235, 235, .8);
-	color: #e7746f;
+	color: #0095FA;
 }
 
 /* ---------------------------------------------- /*

@@ -166,6 +166,8 @@ nav a:hover{
 .social-links-custom a:hover:nth-child(6) {
   border-radius: 10%;
 }
+
+
 /* SMARTPHONES PORTRAIT */
 @media only screen and (max-width: 320px) {
   /* nav{
@@ -183,7 +185,7 @@ nav a:hover{
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
 }
-  .nav-links{display: show;}
+  /* .nav-links{display: show;} */
 }
 
 /* SMARTPHONES LANDSCAPE */
@@ -205,7 +207,7 @@ nav a:hover{
     /* background-attachment: fixed; */
   }
   .navbar {height: 50px;}
-    .nav-links{display: show;}
+    /* .nav-links{display: show;} */
 }
 
 /* TABLET LANDSCAPE */
@@ -219,7 +221,8 @@ nav a:hover{
     display: none;
   }
 .show-links{display:none; }
-  .nav-links{display: show;}
+  .navbar{height:55px}
+  /* .nav-links{display: show;} */
 }
 /* TABLETS PORTRAIT */
 @media only screen and (max-width: 768px) and (min-width : 600px){
@@ -236,8 +239,8 @@ nav a:hover{
     padding-left: 1vh;
   } */
   .desktop-nav{display:none;}
-.show-links{display:none; }
-      .nav-links{display: show;}
+  .navbar{height:52px}
+      /* .nav-links{display: show;} */
 }
 /* TABLET LANDSCAPE / DESKTOP */
 @media only screen and (max-width: 1024px) and (min-width : 768px) {
@@ -253,9 +256,17 @@ nav a:hover{
     padding-right:2vh;
     padding-left: 2vh;
   } */
-    .desktop-nav{display:none;}
-    .show-links{display:none; }
-      .nav-links{display: none;}
+    .social-links-custom{display:none;}
+    .homepage{
+      background-position: 0px -10vh;
+    }
+    .desktop-nav a{
+      padding-right: 2vh;
+      padding-left:2vh;
+    }
+    #header-container{
+      display:none;
+    }
 }
 /* Desktops and laptops ----------- */
 @media only screen and (max-width : 1224px) and (min-width : 1024px){
@@ -266,6 +277,9 @@ nav a:hover{
   .social-links-custom{display: none;}
   .show-links{display:flex; }
   .nav-links{display: none; }
+  #header-container{
+    display:none;
+  }
 }
 
 
@@ -277,6 +291,9 @@ nav a:hover{
   .mobile-nav{display:none;}
 .show-links{display:none; }
 .nav-links{display: none;}
+#header-container{
+  display:none;
+}
 }
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px){
@@ -287,6 +304,9 @@ nav a:hover{
   .social-links-custom {display: flex;}
 .show-links{display:none; }
   .nav-links{display: none;}
+  #header-container{
+    display:none;
+  }
 }
 
 

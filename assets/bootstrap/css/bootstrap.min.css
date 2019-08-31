@@ -52,7 +52,8 @@ template {
 }
 
 a {
-	background-color: transparent
+	/* background-color: white; */
+	/* outline: 0px solid green; */
 }
 
 a:active,
@@ -4791,7 +4792,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 	margin-bottom: 8px;
 	background-color: transparent;
 	background-image: none;
-	border: 1px solid transparent;
+	/* border: 1px solid transparent; */
 	border-radius: 4px
 }
 
