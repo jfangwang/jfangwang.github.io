@@ -1,6 +1,11 @@
 body{
   font-family: Quicksand;
 }
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 a.icons:hover {
 	opacity: .6;
 	transform: translate(-50%, -50%);
@@ -170,6 +175,11 @@ nav a:hover{
 .custom-button{
   background-color: white;
   border-radius: 100%;
+}
+
+#job-title{
+  background-color: black;
+  color: white;
 }
 
 /* SMARTPHONES PORTRAIT */
