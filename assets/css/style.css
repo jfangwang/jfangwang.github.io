@@ -90,7 +90,6 @@ a,
 
 h2 {
 	font-size: 30px;
-	margin: 0 0 30px;
 }
 
 h3 {
@@ -470,7 +469,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #footer {
-	background: #222;
+	background: #636363;
 	text-align: center;
 	padding: 40px 0;
 	color: #FFF;
@@ -556,9 +555,8 @@ textarea.form-control {
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
 .navbar-custom .navbar-nav > li.active a {
-	background: white;
 	outline: 0;
-	color: #0095FA;
+	color: #fff;
 }
 
 .navbar-custom .navbar-brand {
