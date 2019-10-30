@@ -20,10 +20,33 @@ a.icons:hover {
 }
 .navbar {
   border:0px solid red;
+  /* background:linear-gradient(141deg, #2cb5e8 0%, #eb9f34 51%, #eb5934 75%); */
+  opacity: 0.7;
 	position: relative;
 	height: 80px;
 	margin-bottom: 20px;
-	border: 1px solid transparent
+	/* border: 1px solid transparent */
+  background: linear-gradient(317deg, #246655, #b68d41, #2d86d6);
+
+-webkit-animation: AnimationName 2s ease infinite;
+-moz-animation: AnimationName 2s ease infinite;
+animation: AnimationName 2s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:1% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:1% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:1% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:1% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:1% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:1% 0%}
+}
 }
 header{
   /* width:100%;
@@ -147,6 +170,7 @@ nav a:hover{
   padding-bottom: 10px;
   font-size: 30px;
   z-index: 1;
+  margin-top: 0.35em;
 }
 .social-links-custom a {
   display: flex;
@@ -157,6 +181,8 @@ nav a:hover{
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 100%;
+  height: 1.3em;
+  width: 1.3em;
 }
 .social-links-custom a:hover {
   display: flex;
@@ -176,11 +202,16 @@ nav a:hover{
   background-color: white;
   border-radius: 100%;
 }
+.navbar-brand{
+  padding:16px 16px;
+}
+
 
 #job-title{
   background-color: black;
   color: white;
 }
+
 
 /* SMARTPHONES PORTRAIT */
 @media only screen and (max-width: 320px) {
@@ -220,39 +251,66 @@ nav a:hover{
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
   }
-  .navbar {height: 50px;}
+  .navbar {height: 52px;}
     /* .nav-links{display: show;} */
 }
 
+
 /* TABLET LANDSCAPE */
 @media only screen and (max-width: 600px) and (min-width : 480px) {
-  /* nav{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  } */
-  .desktop-nav{
-    display: none;
+    .social-links-custom a:nth-child(5) {display: none;}
+  .social-links-custom a:nth-child(6) {display: none;}
+  .social-links-custom a, .social-links-custom a:hover {
+    margin-left: 2px;
+    margin-right: 2px;
+    height: 1em;
+    width:1em;
+    display:flex;
   }
-.show-links{display:none; }
-  .navbar{height:55px}
-  /* .nav-links{display: show;} */
+  .social-links-custom{
+    right:2em;
+    top:0px;
+    margin-top: 0.4em;
+    padding-top: 0px;
+  }
+  .social-links-custom img a{
+    display: flex;
+    height: 2em;
+    width:2em;
+  }
+  .social-links-custom a:hover, .social-links-custom a{
+    margin-right: 7px;
+  }
+  .links{display:none;}
+  /* .links{display: none;} */
+  .navbar{height:52px}
+      /* .nav-links{display: show;} */
 }
 /* TABLETS PORTRAIT */
 @media only screen and (max-width: 768px) and (min-width : 600px){
-  /* nav{
+  .social-links-custom a, .social-links-custom a:hover {
+    margin-left: 2px;
+    margin-right: 2px;
+    height: 1em;
+    width:1em;
+    display:flex;
+  }
+  .social-links-custom{
+    right:2em;
+    top:0px;
+    margin-top: 0.4em;
+    padding-top: 0px;
+  }
+  .social-links-custom img a{
     display: flex;
-    justify-content: center;
+    height: 2em;
+    width:2em;
   }
-  nav a {
-    padding-right:1vh;
-    padding-left: 1vh;
+  .social-links-custom a:hover, .social-links-custom a{
+    margin-right: 14px;
   }
-  nav a:hover{
-    padding-right:1vh;
-    padding-left: 1vh;
-  } */
-  .desktop-nav{display:none;}
+  .links{display:none;}
+  /* .links{display: none;} */
   .navbar{height:52px}
       /* .nav-links{display: show;} */
 }
@@ -270,17 +328,23 @@ nav a:hover{
     padding-right:2vh;
     padding-left: 2vh;
   } */
-    .social-links-custom{display:none;}
+    .social-links-custom a, .social-links-custom a:hover {
+      margin-left: 2px;
+      margin-right: 2px;
+      height: 1em;
+      width:1em;
+      display:flex;
+    }
+    .social-links-custom{
+      margin-top: 15px;
+    }
+    .show-links{display:flex;}
     .homepage{
       background-position: 0px -10vh;
     }
-    .desktop-nav a{
-      padding-right: 2vh;
-      padding-left:2vh;
-    }
-    nav a:hover{
-      padding-right: 2vh;
-      padding-left:2vh;
+    .links a, .links a:hover{
+      padding-right: 1vh;
+      padding-left:1vh;
     }
     #header-container{
       display:none;
@@ -288,13 +352,17 @@ nav a:hover{
 }
 /* Desktops and laptops ----------- */
 @media only screen and (max-width : 1224px) and (min-width : 1024px){
+  .links a, .links a:hover{
+    padding-right: 1vh;
+    padding-left:1vh;
+  }
   .homepage{
     background-position: 0px -10vh;
   }
   .mobile-nav{display:none;}
-  .social-links-custom{display: none;}
-  .show-links{display:flex; }
-  .nav-links {display: none; }
+  .social-links-custom{display: flex;}
+  /* .show-links{display:none;} */
+.nav-links, a.nav-links{display: none;}
   #header-container{
     display:none;
   }
@@ -305,9 +373,9 @@ nav a:hover{
   .homepage{
     background-position: 0px -20vh;
   }
-  .social-links-custom {display: flex;}
   .mobile-nav{display:none;}
-.show-links{display:none; }
+  .social-links-custom {display: flex;}
+/* .show-links{display:none; } */
 .nav-links, a.nav-links{display: none;}
 #header-container{
   display:none;
