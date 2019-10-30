@@ -14,64 +14,14 @@ a.icons:hover {
 .homepage{
   background-image: url(../images/US-Open.png);
   background-size: cover; /* or contain depending on what you want */
-  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-.navbar {
-  border:0px solid red;
-  /* background:linear-gradient(141deg, #2cb5e8 0%, #eb9f34 51%, #eb5934 75%); */
-  opacity: 0.7;
-	position: relative;
-	height: 80px;
-	margin-bottom: 20px;
-	/* border: 1px solid transparent */
-  background: linear-gradient(317deg, #246655, #b68d41, #2d86d6);
-
--webkit-animation: AnimationName 2s ease infinite;
--moz-animation: AnimationName 2s ease infinite;
-animation: AnimationName 2s ease infinite;
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:1% 0%}
-    50%{background-position:99% 100%}
-    100%{background-position:1% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:1% 0%}
-    50%{background-position:99% 100%}
-    100%{background-position:1% 0%}
-}
-@keyframes AnimationName {
-    0%{background-position:1% 0%}
-    50%{background-position:99% 100%}
-    100%{background-position:1% 0%}
-}
-}
-header{
-  /* width:100%;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height:100vh; */
+  background-position: center center;
 }
 h1{
   font-size: 100px;
   text-transform: uppercase;
-  font-family: Quicksand;
 }
-section{
-  /* position: absolute;
-  background-color: green;
-  width:100%;
-  height: 100%;
-  left: 0;
-  top:100vh; */
-}
-
-
 .parallax{
   /* Set a specific height */
   min-height: 500px;
@@ -81,52 +31,70 @@ section{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.mobile-nav{
-  position:fixed;
-  top:0;
-  left:0;
-  width:auto;
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  font-size: 30px;
-  z-index: 1;
-}
-.mobile-nav a{
-  text-decoration: none;
-  outline:none;
-  padding-right:4vh;
-  padding-left: 4vh;
-  border-radius: 20px;
-  color: white;
+
+.navbar {
+  border:0px solid red;
+  /* background:linear-gradient(141deg, #2cb5e8 0%, #eb9f34 51%, #eb5934 75%); */
+  opacity: 0.7;
+	position: relative;
+  background: linear-gradient(317deg, #246655, #b68d41, #2d86d6);
 }
 .desktop-nav{
-  position:fixed;
-  top:0;
-  left:0;
-  width:auto;
   display: flex;
-  justify-content: flex-start;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  align-items: center;
+  position:fixed;
+  width:100%;
   font-size: 30px;
   z-index: 100;
 }
 .desktop-nav a{
   text-decoration: none;
   outline:none;
-  padding-right:4vh;
-  padding-left: 4vh;
-  border-radius: 20px;
+  border-radius: 10px;
   color: black;
 }
 nav a:hover{
   background-color: white;
-  padding-right:4vh;
-  padding-left: 4vh;
-  border-radius: 20px;
 }
+.links{
+  width:70%;
+  display: flex;
+  justify-content: space-around;
+
+}
+.social-links-custom{
+  right:0;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  position:fixed;
+  z-index: 1;
+}
+.social-links-custom a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 100%;
+}
+.social-links-custom a:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 100%;
+}
+.social-links-custom a:hover:nth-child(6) {
+  border-radius: 10%;
+}
+.social-links-custom img{
+  height: 1.3em;
+  width: 1.3em;
+}
+
+
 .welcome{
   position: absolute;
 	width: 100%;
@@ -159,254 +127,11 @@ nav a:hover{
   left: 0;
   top:200vh;
 }
-.social-links-custom{
-  position:fixed;
-  top:5px;
-  right:0;
-  width:auto;
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 30px;
-  z-index: 1;
-  margin-top: 0.35em;
-}
-.social-links-custom a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 100%;
-  height: 1.3em;
-  width: 1.3em;
-}
-.social-links-custom a:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 100%;
-
-}
-.social-links-custom a:hover:nth-child(6) {
-  border-radius: 10%;
-}
-.custom-button{
-  background-color: white;
-  border-radius: 100%;
-}
-.navbar-brand{
-  padding:16px 16px;
-}
-
 
 #job-title{
   background-color: black;
   color: white;
 }
-
-
-/* SMARTPHONES PORTRAIT */
-@media only screen and (max-width: 320px) {
-  /* nav{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  } */
-  .desktop-nav{
-    display: none;
-  }
-.show-links{display:none; }
-.homepage{
-  background-size: auto 40%;
-  background-position: top center;
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-}
-  /* .nav-links{display: show;} */
-}
-
-/* SMARTPHONES LANDSCAPE */
-/*       iPhone       */
-@media only screen and (max-width: 480px) and (min-width : 320px) {
-  /* nav{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  } */
-  .desktop-nav{
-    display: none;
-  }
-  .show-links{display:none; }
-  .homepage{
-    background-size: auto 40%;
-    background-position: top center;
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-  }
-  .navbar {height: 52px;}
-    /* .nav-links{display: show;} */
-}
-
-
-/* TABLET LANDSCAPE */
-@media only screen and (max-width: 600px) and (min-width : 480px) {
-    .social-links-custom a:nth-child(5) {display: none;}
-  .social-links-custom a:nth-child(6) {display: none;}
-  .social-links-custom a, .social-links-custom a:hover {
-    margin-left: 2px;
-    margin-right: 2px;
-    height: 1em;
-    width:1em;
-    display:flex;
-  }
-  .social-links-custom{
-    right:2em;
-    top:0px;
-    margin-top: 0.4em;
-    padding-top: 0px;
-  }
-  .social-links-custom img a{
-    display: flex;
-    height: 2em;
-    width:2em;
-  }
-  .social-links-custom a:hover, .social-links-custom a{
-    margin-right: 7px;
-  }
-  .links{display:none;}
-  /* .links{display: none;} */
-  .navbar{height:52px}
-      /* .nav-links{display: show;} */
-}
-/* TABLETS PORTRAIT */
-@media only screen and (max-width: 768px) and (min-width : 600px){
-  .social-links-custom a, .social-links-custom a:hover {
-    margin-left: 2px;
-    margin-right: 2px;
-    height: 1em;
-    width:1em;
-    display:flex;
-  }
-  .social-links-custom{
-    right:2em;
-    top:0px;
-    margin-top: 0.4em;
-    padding-top: 0px;
-  }
-  .social-links-custom img a{
-    display: flex;
-    height: 2em;
-    width:2em;
-  }
-  .social-links-custom a:hover, .social-links-custom a{
-    margin-right: 14px;
-  }
-  .links{display:none;}
-  /* .links{display: none;} */
-  .navbar{height:52px}
-      /* .nav-links{display: show;} */
-}
-/* TABLET LANDSCAPE / DESKTOP */
-@media only screen and (max-width: 1024px) and (min-width : 768px) {
-  /* nav{
-    display: flex;
-    justify-content: center;
-  }
-  nav a {
-    padding-right:2vh;
-    padding-left: 2vh;
-  }
-  nav a:hover{
-    padding-right:2vh;
-    padding-left: 2vh;
-  } */
-    .social-links-custom a, .social-links-custom a:hover {
-      margin-left: 2px;
-      margin-right: 2px;
-      height: 1em;
-      width:1em;
-      display:flex;
-    }
-    .social-links-custom{
-      margin-top: 15px;
-    }
-    .show-links{display:flex;}
-    .homepage{
-      background-position: 0px -10vh;
-    }
-    .links a, .links a:hover{
-      padding-right: 1vh;
-      padding-left:1vh;
-    }
-    #header-container{
-      display:none;
-    }
-}
-/* Desktops and laptops ----------- */
-@media only screen and (max-width : 1224px) and (min-width : 1024px){
-  .links a, .links a:hover{
-    padding-right: 1vh;
-    padding-left:1vh;
-  }
-  .homepage{
-    background-position: 0px -10vh;
-  }
-  .mobile-nav{display:none;}
-  .social-links-custom{display: flex;}
-  /* .show-links{display:none;} */
-.nav-links, a.nav-links{display: none;}
-  #header-container{
-    display:none;
-  }
-}
-
-
-@media only screen and (max-width : 1824px)  and (min-width : 1224px)  {
-  .homepage{
-    background-position: 0px -20vh;
-  }
-  .mobile-nav{display:none;}
-  .social-links-custom {display: flex;}
-/* .show-links{display:none; } */
-.nav-links, a.nav-links{display: none;}
-#header-container{
-  display:none;
-}
-}
-/* Large screens ----------- */
-@media only screen and (min-width : 1824px){
-  .homepage{
-    background-position: 0px -40vh;
-  }
-  .mobile-nav{display:none;}
-  .social-links-custom {display: flex;}
-.show-links{display:none; }
-  .nav-links, a.nav-links{display: none;}
-  #header-container{
-    display:none;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*
@@ -546,3 +271,122 @@ nav a:hover{
  {
    transform: none;
  }
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 320px) {
+  .homepage{
+    background-size: cover;
+    background-position: center center;
+  }
+    .links{display: none;}
+    .social-links-custom{
+      right: auto;
+      width: 100%;
+      margin-top: 1em;
+      position: relative;
+    }
+    .desktop-nav{position: relative;}
+
+}
+
+/* SMARTPHONES LANDSCAPE */
+/*       iPhone       */
+@media only screen and (max-width: 480px) and (min-width : 320px) {
+  .homepage{
+    background-size: cover;
+    background-position: center center;
+  }
+    .links{display: none;}
+    .social-links-custom{
+      right: auto;
+      width: 100%;
+      margin-top: 1em;
+      position: relative;
+    }
+    .desktop-nav{position: relative;}
+}
+
+/* TABLET LANDSCAPE */
+@media only screen and (max-width: 600px) and (min-width : 480px) {
+  .homepage{
+    background-size: cover;
+    background-position: center center;
+  }
+  .links{display: none;}
+  .social-links-custom{
+    right: auto;
+    width: 100%;
+    margin-top: 1em;
+    position: relative;
+  }
+  .desktop-nav{position: relative;}
+}
+/* TABLETS PORTRAIT */
+@media only screen and (max-width: 768px) and (min-width : 600px){
+  .homepage{
+    background-position: 0vh -10vh;
+  }
+  .links{display: none;}
+  .social-links-custom{
+    right: auto;
+    width: 100%;
+    margin-top: 1em;
+    position: relative;
+  }
+  .desktop-nav{position: relative;}
+}
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (max-width: 1024px) and (min-width : 768px) {
+  .homepage{
+    background-position: 0vh -10vh;
+  }
+  .links{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    display: flex;
+    align-items: flex-start;
+    position:fixed;
+    font-size: 30px;
+    z-index: 100;
+    top:0;
+  }
+  .social-links-custom{
+    right: auto;
+    width: 100%;
+    margin-top: 1.7em;
+    position: relative;
+  }
+  .desktop-nav{position: relative;}
+  #header-container{
+      display:none;
+    }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (max-width : 1224px) and (min-width : 1024px){
+  .homepage{
+    background-position: 0vh -10vh;
+  }
+  #header-container{
+    display:none;
+  }
+}
+
+
+@media only screen and (max-width : 1824px)  and (min-width : 1224px)  {
+  .homepage{
+    background-position: 0vh -20vh;
+  }
+#header-container{
+  display:none;
+}
+}
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px){
+  .homepage{
+    background-position: 0vh -40vh;
+  }
+  #header-container{
+    display:none;
+  }
+}

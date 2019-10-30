@@ -549,7 +549,7 @@ textarea.form-control {
 	font-size: 11px;
 	letter-spacing: 3px;
 	color: #222;
-		background: white;
+		background: none;
 }
 
 .navbar-custom .nav li.active,
