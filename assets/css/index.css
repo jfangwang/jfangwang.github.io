@@ -283,8 +283,7 @@ h2{
 /* SMARTPHONES PORTRAIT */
 @media only screen and (max-width: 320px) {
   .homepage{
-    background-size: cover;
-    background-position: center center;
+    background-attachment: initial;
   }
     .links{display: none;}
     .social-links-custom{
@@ -304,8 +303,7 @@ h2{
 /*       iPhone       */
 @media only screen and (max-width: 480px) and (min-width : 320px) {
   .homepage{
-    background-size: cover;
-    background-position: center center;
+    background-attachment: initial;
   }
     .links{display: none;}
     .social-links-custom{
@@ -324,8 +322,7 @@ h2{
 /* TABLET LANDSCAPE */
 @media only screen and (max-width: 600px) and (min-width : 480px) {
   .homepage{
-    background-size: cover;
-    background-position: center center;
+    background-attachment: initial;
   }
   .links{display: none;}
   .social-links-custom{
