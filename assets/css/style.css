@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,300,500,700,800);
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 
 /*!
@@ -7,9 +7,21 @@
  * Copyright 2015 Script Eden
  * Licensed under MIT
 */
-
+/* quicksand-regular - latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/quicksand-v13-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/quicksand-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/quicksand-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/quicksand-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/quicksand-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/quicksand-v13-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
 body {
-	font: 300 14px/1.8 'Raleway', sans-serif;
+	font: 300 14px/1.8 Quicksand;
 	color: #666;
 	overflow-x: hidden;
 }
@@ -20,7 +32,7 @@ img {
 }
 
 a {
-	color: #E7746F;
+	color: #0095FA;
 }
 
 a:hover {
@@ -68,17 +80,16 @@ a,
  * Typography
 /* ---------------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 {
-	font: 700 40px/1.2 Raleway, sans-serif;
+/* h1, h2, h3, h4, h5, h6 {
+	font: 700 40px/1.2 Quicksand;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin: 5px 0 5px;
-	color: #222;
-}
+	color: white;
+} */
 
 h2 {
 	font-size: 30px;
-	margin: 0 0 30px;
 }
 
 h3 {
@@ -175,7 +186,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 .btn {
-	font-family: Raleway, sans-serif;
+	font-family: Quicksand;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 13px;
@@ -276,7 +287,7 @@ textarea.form-control {
 }
 
 .pfblock-subtitle {
-	font-family: Raleway, "Times New Roman", Times, sans-serif;
+	font-family: Quicksand;
 	font-style: normal;
 	font-size: 18px;
 }
@@ -371,14 +382,13 @@ textarea.form-control {
 	position: absolute;
 	width: 100%;
 	top: 50%;
-	left: 0;
 	text-align: center;
 	-webkit-transform: translate(0%, -50%);
 	   -moz-transform: translate(0%, -50%);
 		-ms-transform: translate(0%, -50%);
 		 -o-transform: translate(0%, -50%);
 			transform: translate(0%, -50%);
-	padding: 0 15px;
+
 }
 
 .intro h1{
@@ -386,7 +396,7 @@ textarea.form-control {
 }
 
 .start {
-	font-family: Raleway, "Times New Roman", Times, sans-serif;
+	font-family: Quicksand;
 	font-size: 16px;
 	font-style: normal;
 	text-transform: none;
@@ -459,7 +469,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #footer {
-	background: #222;
+	background: #636363;
 	text-align: center;
 	padding: 40px 0;
 	color: #FFF;
@@ -514,23 +524,21 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 .header {
-	border-bottom: 1px solid #f5f5f5;
 	position: relative;
 	width: 100%;
-	z-index: 998;
+	z-index: 1;
 }
 
 .navbar-custom {
-	border: 0;
+	border: 0px solid red;
 	border-radius: 0;
-	margin: 0;
 	text-transform: uppercase;
-	font-family: Raleway, sans-serif;
+	font-family: Quicksand;
 }
 
 .navbar-custom,
 .navbar-custom .dropdown-menu {
-	background: #fff;
+	/* background: #fff; */
 	padding: 0;
 }
 
@@ -540,26 +548,27 @@ textarea.form-control {
 	font-size: 11px;
 	letter-spacing: 3px;
 	color: #222;
+		background: none;
 }
 
 .navbar-custom .nav li.active,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
 .navbar-custom .navbar-nav > li.active a {
-	background: none;
 	outline: 0;
-	color: #E7746F;
+	color: #fff;
 }
 
 .navbar-custom .navbar-brand {
 	font-weight: 700;
-	font-size: 22px;
-    font-family: Lobster, cursive;
+	font-size: 27px;
+  font-family: Quicksand;
+  height:100%;
 }
 
 .navbar-custom .dropdown-menu {
 	border: 0;
-	border-top: 2px solid #E7746F;
+	border-top: 2px solid #0095FA;
 	border-radius: 0;
 }
 
@@ -574,7 +583,7 @@ textarea.form-control {
 }
 
 .navbar-custom .navbar-toggle .icon-bar {
-	background: #222;
+	background: #fff;
 }
 
 /* ---------------------------------------------- /*
@@ -603,7 +612,7 @@ textarea.form-control {
 .scroll-up a:hover,
 .scroll-up a:active {
 	background-color: rgba(235, 235, 235, .8);
-	color: #e7746f;
+	color: #0095FA;
 }
 
 /* ---------------------------------------------- /*
@@ -668,9 +677,9 @@ textarea.form-control {
 }
 
 #status {
-	background-image: url(../images/preloader.gif);
+	background-image: url(../images/Running.gif);
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	height: 200px;
 	left: 50%;
 	margin: -100px 0 0 -100px;
