@@ -135,13 +135,26 @@ h2{
   height: 2em;
   width: 2em;
 }
-.space{margin-top: 3em;}
 #job-title{
   background-color: #121317;
   color: white;
 }
-
-
+.name-footer{
+}
+.proj-group{
+  display: flex;
+  flex-direction: row;
+}
+.proj-group div {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.proj-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 /*
  * Made by Erik Terwan
  * 24th of November 2015
