@@ -1,0 +1,17 @@
+.navbar {
+    opacity: 80%;
+    background-color: lightblue;
+    display: flex;
+}
+.bg-primary {
+    background-color: lightgreen;
+}
+.github, .instagram, .linkedin, .snapchat, .twitter, .facebook {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0 0.5rem 0 0.5rem;
+}
+.github:hover, .instagram:hover, .linkedin:hover, .snapchat:hover, .twitter:hover, .facebook:hover {
+    background-color: white;
+    border-radius: 0.5rem;
+}
