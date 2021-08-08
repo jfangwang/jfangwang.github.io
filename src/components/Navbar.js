@@ -20,15 +20,15 @@ import {
 function Navigation_bar() {
   return (
     <>
-    <Navbar collapseOnSelect className="navbar" fixed="top" bg="success" expand="md" variant="dark">
+    <Navbar collapseOnSelect fixed="top" bg="success" expand="md" variant="dark">
       <Container>
       <Navbar.Brand href="#home">Jonathan Wang</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#about">About</Nav.Link>
-          <Nav.Link href="#projects">Projects</Nav.Link>
+          <Nav.Link className="navlink" href="#home">Home</Nav.Link>
+          <Nav.Link className="navlink" href="#about">About</Nav.Link>
+          <Nav.Link className="navlink" href="#projects">Projects</Nav.Link>
           {/* <Nav.Link href="#blog">Blog</Nav.Link> */}
           {/* <Nav.Link href="#contact">Contact</Nav.Link> */}
           <Nav.Link href="https://github.com/jfangwang"><img className="github" src={Github}></img></Nav.Link>
