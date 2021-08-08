@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import "./Home.scss";
 import Google from './images/google-square.png';
 import TalkHiring from './images/talk-hiring-logo.jpeg';
 import Bah from './images/bah-logo.png';
 import Navigation_bar from './components/Navbar';
-
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
@@ -133,7 +133,7 @@ export default class Home extends Component {
 							A cloned version of Snap Chat if it was a webapp.
 							</Card.Text>
 							<Button className="card-button" variant="primary" href="https://project-yellow-ghost.firebaseapp.com">Try it out</Button>
-							<Button className="card-button" variant="primary">Project Link</Button>
+							<Button className="card-button" variant="primary" href="https://github.com/jfangwang/webrtc_demos">Project Link</Button>
 						</Card.Body>
 						<Card.Footer className="text-muted">Built with: React, Google Firebase</Card.Footer>
 					</Card>

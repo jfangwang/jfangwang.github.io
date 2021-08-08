@@ -4,7 +4,7 @@ section {
     font-family: 'Quicksand', sans-serif;
     min-height:100vh;
     scroll-behavior: smooth;
-    border-bottom: 0.4rem solid black;
+    border-bottom: 0.4rem solid #5cb85c;
 }
 section h1 {
     padding-top:3.2rem;
@@ -18,7 +18,7 @@ section h1 {
     background-position: center;
     background-repeat: no-repeat;
     color:white;
-    background-color: lightgreen;
+    background-color: #5cb85c;
 }
 .background-desktop {
     background-size: 100% auto;
@@ -67,6 +67,6 @@ section h1 {
 .footer {
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: #5cb85c;
     color: white;
 }

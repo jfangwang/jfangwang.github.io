@@ -1,8 +1,7 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import 'bootstrap/dist/css/bootstrap.css';
 import './Navbar.css';
 import Home from '../Home';
 import Github from '../images/github-logo.png';
@@ -21,7 +20,7 @@ import {
 function Navigation_bar() {
   return (
     <>
-    <Navbar collapseOnSelect className="navbar navbar-light sticky-top " expand="md" variant="light">
+    <Navbar collapseOnSelect className="navbar" fixed="top" bg="success" expand="md" variant="dark">
       <Container>
       <Navbar.Brand href="#home">Jonathan Wang</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
