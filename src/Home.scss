@@ -12,6 +12,11 @@ section h1 {
 .intro h1 {
     padding-left: 2rem;
 }
+a {
+    text-decoration: none;
+    color: white;
+    border: none;
+}
 
 .intro {
     background-image: url("./images/USOpen-profile.jpg");
@@ -19,7 +24,30 @@ section h1 {
     background-repeat: no-repeat;
     color:white;
     background-color: #5cb85c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
 }
+.resume {
+    text-decoration: none;
+    color: white;
+    border: none;
+    background-color: #1DA1F2;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+.resume:hover {
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    border: none;
+    background-color: #78aada;
+    color: rgb(206, 206, 206);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+
 .background-desktop {
     background-size: 100% auto;
 }

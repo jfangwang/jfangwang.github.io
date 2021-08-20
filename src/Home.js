@@ -7,6 +7,7 @@ import Bah from './images/bah-logo.png';
 import Navigation_bar from './components/Navbar';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Resume from './components/Jonny_Wang_Resume_8_11_21.pdf';
 
 export default class Home extends Component {
 	constructor(props) {
@@ -56,6 +57,7 @@ export default class Home extends Component {
 				{/* Intro Section */}
 				<section id="home" className="intro background-mobile">
 					<h1 className="display-1">Jonathan Wang</h1>
+					<h1><a class="resume" href={Resume}>Resumé</a></h1>
 				</section>
 				{/* About Section */}
 				<section id="about" className="about">
@@ -195,7 +197,7 @@ export default class Home extends Component {
 				</section> */}
 
 				<div className="footer">
-					<p>Designed by Jonathan Wang</p>
+					<p>Built with React JS</p>
 				</div>
 
 			</>

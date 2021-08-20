@@ -10,6 +10,7 @@ import Linkedin from '../images/linkedin.png';
 import Snapchat from '../images/snapchat-logo.png';
 import Twitter from '../images/twitter-logo.png';
 import Facebook from '../images/facebook-logo.png';
+import Resume from './Jonny_Wang_Resume_8_11_21.pdf';
 import {
   BrowserRouter as Router,
   Switch,
@@ -29,6 +30,7 @@ function Navigation_bar() {
           <Nav.Link className="navlink" href="#home">Home</Nav.Link>
           <Nav.Link className="navlink" href="#about">About</Nav.Link>
           <Nav.Link className="navlink" href="#projects">Projects</Nav.Link>
+          <Nav.Link className="navlink" href={Resume} target="_blank">Resumé</Nav.Link>
           {/* <Nav.Link href="#blog">Blog</Nav.Link> */}
           {/* <Nav.Link href="#contact">Contact</Nav.Link> */}
           <Nav.Link href="https://github.com/jfangwang"><img className="github" src={Github}></img></Nav.Link>
