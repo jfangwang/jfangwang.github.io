@@ -1,0 +1,25 @@
+
+.bg-primary {
+    background-color: lightgreen;
+}
+.instagram, .snapchat, .facebook, .twitter, .linkedin, .github{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 0 0.5rem 0 0.5rem;
+}
+ .github:hover, .facebook:hover{
+    background-color: white;
+    border-radius: 1rem;
+}
+.twitter:hover, .linkedin:hover, .snapchat:hover {
+    background-color: white;
+    border-radius: 0.2rem;
+}
+.instagram:hover {
+    background-color: white;
+    border-radius: 0.4rem;
+}
+.navlink:hover {
+    background-color: #1DA1F2;
+    border-radius: 0.25rem;
+}

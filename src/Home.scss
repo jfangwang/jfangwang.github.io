@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand:wght@300;500&display=swap');
+
+section {
+    font-family: 'Quicksand', sans-serif;
+    min-height:100vh;
+    scroll-behavior: smooth;
+    border-bottom: 0.4rem solid #5cb85c;
+}
+section h1 {
+    padding-top:3.2rem;
+}
+.intro h1 {
+    padding-left: 2rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+
+.intro {
+    background-image: url("./images/USOpen-profile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white;
+    background-color: #5cb85c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+.resume {
+    text-decoration: none;
+    color: white;
+    border: none;
+    background-color: #1DA1F2;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+.resume:hover {
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+    border: none;
+    background-color: #78aada;
+    color: rgb(206, 206, 206);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+.background-desktop {
+    background-size: 100% auto;
+}
+.background-mobile {
+    background-size: auto 100%;
+}
+.card-list {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 4em;
+    width: 100%;
+}
+.questions, .project-intro{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#about, #projects, #blog, #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.project-card, .work-card{
+    max-width: 30rem;
+    margin-top: 4rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+.card-button {
+    margin: 0 1rem 0 1rem;
+}
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+.project-intro {
+    display: flex;
+    width: 80%;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #5cb85c;
+    color: white;
+}
