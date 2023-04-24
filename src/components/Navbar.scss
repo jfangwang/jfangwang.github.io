@@ -1,0 +1,37 @@
+@import '../variables';
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: lightgreen;
+    padding: 1em 1em
+}
+li a {
+    font-size: 1.15em;
+    font-weight: bold;
+    padding: 0.25em 1em;
+    margin: 0;
+    border-radius: 2em;
+    background: transparent;
+    transition: background-color 0.2s;
+    border: 1px $gray-300 solid;
+}
+li a:hover {
+    background-color: $gray-300;
+}
+
+// @keyframes fillColor {
+//     0%   {background-color: rgb(215, 215, 215, 0);}
+//     100% {background-color: rgb(215, 215, 215, 1);}
+//   }
+@media screen and (max-width: map-get($grid-breakpoints, sm)) {
+    li {
+        padding: 0.25em 0em;
+    }
+}
